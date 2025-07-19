@@ -8,31 +8,35 @@
   <style>
     .container {
       max-width: 960px;
-      margiin: 0 auto;
+      margin: 0 auto;
       padding: 16px;
     }
- </style>
-  
+  </style>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
   
-  <script src="https://cdn.tailwindcss.com"></script>
-  
-<body 
- <div class="container">
-  <img src="https://github.com/viewintmookhata/Viewint-mookratha/blob/main/IMG_0389.jpeg?raw=true" 
-       alt="ภาพหัวร้าน" 
-       class="absolute w-full h-full object-cover opacity-60" />
-  <h1 class="relative z-10 text-3xl font-bold text-center text-white leading-[10rem]">
-    ร้านวิวอินท์ หมูกระทะ
-  </h1>
-</div>
+<body class="bg-gray-100 text-gray-800">
+  <div class="container">
+    <!-- หัวเว็บ -->
+    <div class="relative w-full h-[300px] overflow-hidden mb-6 rounded-xl">
+      <img src="https://github.com/viewintmookhata/Viewint-mookratha/blob/main/IMG_0389.jpeg?raw=true" 
+           alt="ภาพหัวร้าน" 
+           class="absolute w-full h-full object-cover opacity-60" />
+      <h1 class="relative z-10 text-3xl font-bold text-center text-white leading-[300px]">
+        ร้านวิวอินท์ หมูกระทะ
+      </h1>
+    </div>
+
+    <!-- เมนู -->
     <h2 class="text-xl font-semibold mb-2">เมนูหมูกระทะ</h2>
     <div id="menu" class="space-y-4"></div>
 
+    <!-- ตะกร้า -->
     <h2 class="text-xl font-semibold mt-6 mb-2">ตะกร้าสินค้า</h2>
     <ul id="cart" class="bg-white rounded-xl shadow p-4 mb-4 space-y-2"></ul>
     <p class="font-semibold">รวม: <span id="total">0</span> บาท</p>
 
+    <!-- ข้อมูลผู้สั่ง -->
     <h2 class="text-xl font-semibold mt-6 mb-2">ข้อมูลผู้สั่ง</h2>
     <form id="order-form" class="space-y-2">
       <input required name="name" placeholder="ชื่อผู้สั่ง" class="w-full p-2 rounded border" />
